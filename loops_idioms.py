@@ -27,3 +27,15 @@ for value in [9, 41, 12, 3, 74, 15, 67, 27, 29, 56] :
     sum = sum + value
     print(count, sum, value)
 print("After", count, sum, sum /count)
+
+#SEARCH WITH BOOLEAN VARIABLE : If we want to know if a value was found,
+# we use a variable that starts at FALSE and it is set to TRUE
+#as soon as we find what we are looking for.
+found = False
+print("before", found)
+for value in [9, 41, 12, 67, 3, 77, 28] :
+    if value == 3 :
+        found = True
+        break
+    print(found, value)
+print("after", found)
